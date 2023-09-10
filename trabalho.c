@@ -26,7 +26,7 @@ int main() {
         return 1;
     }
 
-    // Resto do código permanece inalterado
+
     char linha[1000];
 
     while (fgets(linha, sizeof(linha), entrada) != NULL) {
@@ -34,7 +34,6 @@ int main() {
         float nota1, nota2;
 
         if (sscanf(linha, "%[^,],%*[^,],%[^,],%f,%f", nome, curso, &nota1, &nota2) != 4) {
-            printf("Erro ao ler os dados da linha.\n");
             continue;
         }
 
